@@ -6,6 +6,20 @@
     <title>About Us - Liver Cirrhosis Prediction</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+        document.onkeydown = function(e) {
+            if (e.key === "F12" || 
+                (e.ctrlKey && e.shiftKey && e.key === "I") || 
+                (e.ctrlKey && e.key === "U") || 
+                (e.ctrlKey && e.key === "S")) {
+                return false;
+            }
+        };
+    </script>
 </head>
 <body>
     <header>
