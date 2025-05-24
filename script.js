@@ -106,11 +106,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 riskLevel = "Low Risk";
                 riskColor = "#2ecc71";  // Green
                 recommendation = "Your risk of liver cirrhosis is low. Continue maintaining a healthy lifestyle and regular check-ups.";
-            } else if (probability < 50) {
+            } else if (probability < 50 && probability > 25) {
                 riskLevel = "Moderate-Low Risk";
                 riskColor = "#f1c40f";  // Yellow
                 recommendation = "You have a moderate-low risk of liver cirrhosis. Consider lifestyle changes and regular health check-ups.";
-            } else if (probability < 75) {
+            } else if (probability < 75 && probability > 50) {
                 riskLevel = "Moderate-High Risk";
                 riskColor = "#e67e22";  // Orange
                 recommendation = "You have a moderate-high risk of liver cirrhosis. It is recommended to consult with a healthcare professional soon.";
